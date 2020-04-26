@@ -22,7 +22,7 @@ multi_line_output = 3
 include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
-known_third_party = ["asyncpg", "cryptography", "gino", "pkg_resources", "schema", "toml"]
+known_third_party = ["asyncpg", "cryptography", "pkg_resources", "schema", "toml"]
 
 [tool.poetry]
 name = "squabble"
