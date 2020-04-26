@@ -1,2 +1,5 @@
 .mypy_cache
 poetry.lock
+*.log
+postgres
+secrets
