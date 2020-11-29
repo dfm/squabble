@@ -15,11 +15,13 @@ poetry install
 Database:
 
 ```bash
-conda install postgresql
+conda install postgresql  # Optional
 
 initdb -D postgres/squabble
 pg_ctl -D postgres/squabble -l postgres/squabble.db.log start
 
 createuser --encrypted --pwprompt squabble
 createdb --owner=squabble squabble
+
+psql squabble < src/squabble/sql/tables.sql
 ```

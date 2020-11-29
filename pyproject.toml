@@ -22,7 +22,7 @@ multi_line_output = 3
 include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
-known_third_party = ["asyncpg", "cryptography", "pkg_resources", "schema", "toml"]
+known_third_party = ["aiohttp", "aiohttp_security", "aiohttp_session", "asyncpg", "cryptography", "passlib", "pkg_resources", "schema", "toml"]
 
 [tool.poetry]
 name = "squabble"
@@ -35,13 +35,16 @@ packages = [{include = "squabble", from = "src"}]
 python = "^3.7"
 asyncpg = "^0.20.1"
 schema = "^0.7.2"
+aiohttp_security = "^0.4.0"
+aiohttp_session = "^2.9.0"
+passlib = "^1.7.2"
 
 [tool.poetry.dev-dependencies]
-black = "^19.10b0"
 mypy = "^0.770"
 flake8 = "^3.7.9"
 pytest = "^5.4.1"
 pre-commit = "^2.3.0"
+black = "^19.10b0"
 
 [build-system]
 requires = ["poetry>=1.0.5"]
